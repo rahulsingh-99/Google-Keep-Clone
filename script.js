@@ -1,5 +1,6 @@
 const addButton = document.querySelector('#add');
 
+addButton.addEventListener('click', () => addNote());
 
 const updateLSData = () => {
     const textAreaData = document.querySelectorAll('textarea');
@@ -69,5 +70,3 @@ const notes = JSON.parse(localStorage.getItem('notes'));
 
 if (notes) { notes.forEach(() => addNote(note)) }
 
-
-addButton.addEventListener('click', () => addNote());
