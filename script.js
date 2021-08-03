@@ -11,7 +11,7 @@ const updateLSData = () => {
 
     localStorage.setItem('notes', JSON.stringify(notes));
 }
-
+    // for adding new note 
 const addNote = (text = '') => {
 
     const note = document.createElement('div')
@@ -63,7 +63,7 @@ const addNote = (text = '') => {
     document.body.appendChild(note);
 
 }
-// getting data back from localstorag
+// getting data back from localstorage
 
 const notes = JSON.parse(localStorage.getItem('notes'));
 
