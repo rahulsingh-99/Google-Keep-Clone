@@ -2,6 +2,7 @@ const addButton = document.querySelector('#add');
 
 addButton.addEventListener('click', () => addNote());
 
+// for updating data
 const updateLSData = () => {
     const textAreaData = document.querySelectorAll('textarea');
     const notes = [];
